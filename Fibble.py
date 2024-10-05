@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'Logged in as Bot: {bot.user.name} | Bot User ID: {bot.user.id}')
     print('Bot is now live!\n')
-    channel = bot.get_channel(1173451431114723500)
+    channel = bot.get_channel(Constants.CHANNEL_CODE)
     await channel.send("Bot is now live!")
     
 # Displays ANY message sent in the server. Can be used for debugging.    
